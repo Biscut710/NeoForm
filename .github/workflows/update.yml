@@ -132,10 +132,10 @@ jobs:
             returnValue.patch_src_version_name = pathSrcVersion[pathSrcVersion.length - 1]
           }
           return returnValue;
-    - name: Set up JDK latest
+    - name: Set up JDK 21
       uses: actions/setup-java@v4
       with:
-        java-version: 'latest'
+        java-version: 21
         distribution: 'temurin'
     - id: get_versions
       run: |
